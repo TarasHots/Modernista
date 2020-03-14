@@ -1,0 +1,5 @@
+# Ignore CI build directory
+build/
+
+# Ignore IDE stuff
+.idea/

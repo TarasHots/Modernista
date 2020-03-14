@@ -1,0 +1,11 @@
+language: cpp
+
+# Compiler selection
+compiler:
+  - clang
+
+# Build chain
+script:
+  - cmake --version
+  - cmake CMakeLists.txt
+  - cmake --build . --target Modernista
