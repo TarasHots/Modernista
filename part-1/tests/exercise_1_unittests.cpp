@@ -1,17 +1,17 @@
 #include "../part_1.h"
 
-TEST(Part1Exercises, HandlesZeroInput) {
+TEST(Part1Exercise1, HandlesZeroInput) {
     ASSERT_EQ(part_1::exercise_1(0), 0);
 }
 
-TEST(Part1Exercises, HandlesSmallRange1) {
+TEST(Part1Exercise1, HandlesSmallRange1) {
     ASSERT_EQ(part_1::exercise_1(2), 0);
 }
 
-TEST(Part1Exercises, HandlesSmallRange2) {
+TEST(Part1Exercise1, HandlesSmallRange2) {
     ASSERT_EQ(part_1::exercise_1(3), 3);
 }
 
-TEST(Part1Exercises, HandlesBiggerRange) {
+TEST(Part1Exercise1, HandlesBiggerRange) {
     ASSERT_EQ(part_1::exercise_1(10), 33);
 }
