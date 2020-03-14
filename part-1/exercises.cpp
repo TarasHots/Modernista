@@ -1,10 +1,8 @@
 #include "part_1.h"
 
-void part_1::exercise_1()
+u_int64_t part_1::exercise_1(u_int64_t to)
 {
-    u_int64_t to {}, sum = 0;
-    std::cout << "Enter `to`:" << std::endl;
-    std::cin >> to;
+    u_int64_t sum = 0;
 
     for (size_t i = 3; i <= to; ++i)
     {
@@ -14,15 +12,12 @@ void part_1::exercise_1()
         }
     }
 
-    std::cout << "Numbers sum:" << sum << std::endl;
+    return sum;
 }
 
-void part_1::exercise_2()
+u_long part_1::exercise_2(u_long a, u_long b)
 {
-    u_long a {}, b {}, max {}, min {}, tmp {};
-
-    std::cout << "Enter two values:" << std::endl;
-    std::cin >> a >> b;
+    u_long max {}, min {}, tmp {};
 
     max = std::max(a, b);
     min = std::min(a, b);
@@ -34,5 +29,5 @@ void part_1::exercise_2()
         min = tmp;
     }
 
-    std::cout << max << std::endl;
+    return max;
 }
