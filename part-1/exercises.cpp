@@ -31,3 +31,18 @@ u_long part_1::exercise_2(u_long a, u_long b)
 
     return max;
 }
+
+int part_1::exercise_3(int a, int b)
+{
+    auto max = std::max(std::abs(a), std::abs(b));
+
+    do
+    {
+        if (max % a == 0 && max % b == 0)
+        {
+            return max;
+        }
+
+        ++max;
+    } while (true);
+}

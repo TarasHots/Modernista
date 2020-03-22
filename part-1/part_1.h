@@ -2,6 +2,7 @@
 #define MODERNISTA_PART_1_H
 
 #include <iostream>
+#include <numeric>
 #include <gtest/gtest.h>
 
 namespace part_1
@@ -11,6 +12,15 @@ namespace part_1
 
     //GCD
     u_long exercise_2(u_long a, u_long b);
+
+    //LCM
+    int exercise_3(int a, int b);
+
+    template <class InputIt>
+    int exercise_3_iter(InputIt first, InputIt last)
+    {
+        return std::accumulate(first, last, 1, part_1::exercise_3);
+    }
 }
 
 #endif //MODERNISTA_PART_1_H
