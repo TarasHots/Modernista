@@ -21,6 +21,9 @@ namespace part_1
     {
         return std::accumulate(first, last, 1, part_1::exercise_3);
     }
+
+    //First prime number lesser then input
+    unsigned int exercise_4(unsigned int limit);
 }
 
 #endif //MODERNISTA_PART_1_H
